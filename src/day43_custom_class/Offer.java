@@ -1,7 +1,5 @@
 package day43_custom_class;
 
-
-
 public class Offer {
     String location;
     String company;
