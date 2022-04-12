@@ -1,37 +1,31 @@
-package day43_custom_class;
+package day44_custom_method;
 
-public class Offer {
+public class OfferV2 {
     String location;
     String company;
     double salary;
     boolean isFullTime;
     int PTO;
 
-    public Offer(String company, String location) {
+    public OfferV2(String company, String location) {
         this.company = company;
         this.location = location;
     }
 
-    public Offer(String company, String location, double salary) {
-        this.company = company;
-        this.location = location;
+    public OfferV2(String company, String location, double salary) {
+        this(company, location);//->Chaining constructor
         this.salary = salary;
     }
 
-    public Offer(String location, String company, double salary, boolean isFullTime, int PTO) {
-        this.location = location;
-        this.company = company;
-        this.salary = salary;
+    public OfferV2(String location, String company, double salary, boolean isFullTime, int PTO) {
+        this(company, location, salary);//->chaining constructor
         this.isFullTime = isFullTime;
         this.PTO = PTO;
     }
 
 
     public String toString() {
-        String result = company;
-        if (location != null) {
-            result += "\nLocation: " + location;
-        }
+        String result = company + " Located at" + location;
         if (salary != 0.0) {
             result += "\nSalary: " + salary;
         }

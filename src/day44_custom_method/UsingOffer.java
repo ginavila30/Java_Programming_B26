@@ -1,4 +1,6 @@
-package day43_custom_class;
+package day44_custom_method;
+
+import day44_custom_method.Offer;
 
 public class UsingOffer {
     public static void main(String[] args) {

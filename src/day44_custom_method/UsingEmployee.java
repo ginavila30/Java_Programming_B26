@@ -1,6 +1,6 @@
-package day43_custom_class;
+package day44_custom_method;
 
-import day43_custom_class.Employee;
+import day44_custom_method.Employee;
 
 public class UsingEmployee {
     public static void main(String[] args) {
