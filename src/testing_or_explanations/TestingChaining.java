@@ -1,6 +1,6 @@
 package testing_or_explanations;
 
-import day44_custom_method.ChainExample;
+import day44_custom_class.ChainExample;
 
 public class TestingChaining {
     public static void main(String[] args) {

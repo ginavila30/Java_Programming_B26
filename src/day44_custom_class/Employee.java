@@ -1,4 +1,4 @@
-package day44_custom_method;
+package day44_custom_class;
 
 public class Employee {
     // Class set if instructions to build an object. Contains -> Attributes(variable)& Actions(methods).

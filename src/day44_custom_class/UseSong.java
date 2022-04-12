@@ -1,4 +1,4 @@
-package day44_custom_method;
+package day44_custom_class;
 
 public class UseSong {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package day44_custom_method;
+package day44_custom_class;
 
 public class Offer {
     String location;
@@ -28,7 +28,7 @@ public class Offer {
 
 
     public String toString() {
-        String result = company +" Located at" +location;
+        String result = company +" Located at " +location;
         if (salary != 0.0) {
             result += "\nSalary: " + salary;
         }
