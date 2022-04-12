@@ -47,9 +47,6 @@ public class EmployeeObjectsArrayList {
         System.out.println("The person with highes salary is: "+maxSalaryName+"--> $"+compare);
 
 
-
-
-
     }
 
 

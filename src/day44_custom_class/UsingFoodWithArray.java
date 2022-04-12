@@ -1,6 +1,5 @@
 package day44_custom_class;
 
-import java.util.Arrays;
 
 public class UsingFoodWithArray {
     public static void main(String[] args) {
@@ -26,18 +25,6 @@ public class UsingFoodWithArray {
         }
         System.out.println(priceOver20);
 
-
-      //  String[]arr={String.valueOf(food1), String.valueOf(food2), String.valueOf(food3)};
-//          String elementsWithA="";
-//
-//        for (String each :arr) {
-//           String[]elements= each.split("'");
-//            System.out.println(Arrays.asList(elements));
-//            if(elements[1].trim().toLowerCase().startsWith("a")){
-//                elementsWithA+=elements[1]+" ";
-//            }
-//        }
-//        System.out.println(elementsWithA);
 
         }
 
