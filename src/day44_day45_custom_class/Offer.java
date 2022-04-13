@@ -1,4 +1,4 @@
-package day44_custom_class;
+package day44_day45_custom_class;
 
 public class Offer {
     String location;
@@ -28,15 +28,15 @@ public class Offer {
 
 
     public String toString() {
-        String result = company +" Located at " +location;
+        String result = "\n"+company +" Located at " +location;
         if (salary != 0.0) {
-            result += "\nSalary: " + salary;
+            result += "* Salary: " + salary;
         }
         if (isFullTime) {
-            result += "\nIs full time? " + isFullTime;
+            result += "* Is full time? " + isFullTime;
         }
         if (PTO != 0) {
-            result += "\nPTO: " + PTO;
+            result += "* PTO: " + PTO;
         }
         ;
         return result;

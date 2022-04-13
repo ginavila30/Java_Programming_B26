@@ -1,4 +1,4 @@
-package day44_custom_class;
+package day44_day45_custom_class;
 
 import java.util.ArrayList;
 import java.util.Arrays;

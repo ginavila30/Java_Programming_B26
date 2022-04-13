@@ -1,4 +1,4 @@
-package day44_custom_class;
+package day44_day45_custom_class;
 
 public class UsingFood {/* Create a separate class to create and test the Food objects
 
@@ -11,7 +11,7 @@ public class UsingFood {/* Create a separate class to create and test the Food o
         Food food1=new Food("Fries");
         System.out.println(food1);
         Food food2=new Food("Apple",5);
-        food2.calculatePrice(5,2.5);
+        food2.calculatePrice();
         System.out.println(food2);
 
         Food food3= new Food("Strawberries",10,1.5);

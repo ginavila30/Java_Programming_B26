@@ -1,4 +1,4 @@
-package day44_custom_class;
+package day44_day45_custom_class;
 
 public class Food {
     /*   create a class called Food
@@ -29,9 +29,9 @@ public class Food {
     public Food(String name, int quantity, double unitPrice){
         this(name,quantity);
         this.unitPrice=unitPrice;
-        calculatePrice(this.quantity,this.unitPrice);
+        calculatePrice();
     }
-    public double calculatePrice(int quantity,double unitPrice){ return this.Totalprice=quantity*unitPrice;}
+    public double calculatePrice(){ return Totalprice=quantity*unitPrice;}
 
     @Override
     public String toString() {
