@@ -1,4 +1,4 @@
-package day17_04_11_2022;
+package day18_04_13_2022;
 
 public class Student {
     /* ======= Task 1 ======= (Parameterized vs No Arg  Constructor |  Chaining | Overloading | This() )
@@ -24,10 +24,14 @@ public class Student {
     public Student (String name, int age){
         this(name);
         this.age=age;
+        joinClass(name);// calling a method inside constructor.
     }
     public Student(String name, int age,int batchNum){
         this(name,age);
         this.batchNum=batchNum;
+    }
+    public void joinClass(String name){
+        System.out.println(name+" is joining class.");
     }
 
     @Override

@@ -1,4 +1,4 @@
-package day17_04_11_2022;
+package day18_04_13_2022;
 
 import day18_stringMethods.AccountNumber;
 
@@ -25,27 +25,28 @@ public class BankAccount {
                       Example Output :
                           */
     String accountHolder;
-    int accountNumber;
-    double balance;
+    double accountNumber;
+    double balance=0;
 
-    public BankAccount (String accountHolder,int accountNumber,double balance){
+    public BankAccount (String accountHolder,int accountNumber){
         this.accountHolder=accountHolder;
         this.accountNumber=accountNumber;
-        this.balance=balance;
+
     }
 
-    public String checkBalance(){
-        return "Current balance is "+balance;
+    public void checkBalance(){
+        System.out.println("As of today, "+accountHolder+" available balance is "+balance);
     }
-    public String deposit(double amount){
-        if(amount>0){balance+=amount;}
-        return amount>0?"Deposit succesfully completed": "Depositing amount can not be zero or negative";
+    public void deposit(double amount){
+        if(amount>0){balance+=amount;}else {
+        System.err.println( "Depositing amount can not be zero or negative");};
     }
-    public String withdraw(double amount){
-        if(amount>balance){return "Insuficient balance ";}
+    public void withdraw(double amount){
+        if(amount>balance){
+            System.err.println("Insufficient balance ");
+        }
         else if(amount<=0){
-            return "Withdrawing amount can not be negative or zero";}else{  balance-=amount;return "Processing " +
-                "withdrawal";}
+            System.err.println( "Withdrawing amount can not be negative or zero");}else{  balance-=amount;}
     }
 
     @Override
