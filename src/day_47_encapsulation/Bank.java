@@ -1,6 +1,6 @@
-package day46_static;
+package day_47_encapsulation;
 
-public class UsingDebitCard {
+public class Bank {
     public static void main(String[] args) {
         DebitCard card1=new DebitCard(1234567891011254L,"Gina S",12000);
         DebitCard card2=new DebitCard(1234567891011L,"Gina S",12000,"Visa",1234);

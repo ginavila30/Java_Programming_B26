@@ -6,12 +6,12 @@ import java.util.Arrays;
 
 public class CydeoStudent {
     //Instance vxs-> belong to object
-    String name;
-    int groupNum;
+    public String name;
+    public int groupNum;
     //Static vxs -> belong to class
-    static int batchNum;
-    static String[] instructors;
-    static String schoolName;
+    public static int batchNum;
+    public static String[] instructors;
+    public static String schoolName;
 
     // Using static block
     static {

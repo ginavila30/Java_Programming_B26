@@ -1,4 +1,4 @@
-package day46_static;
+package day_47_encapsulation;
 
 public class DebitCard {
     long cardNumber;
@@ -9,35 +9,34 @@ public class DebitCard {
 
     static String accountType;
 
-    static {accountType="debit";}
+    static {accountType="Checking";}
 
     public DebitCard(long cardNumber,String holderName, double balance){
         if(String.valueOf(cardNumber).length()!=16){
-            System.out.println("Invalid card number");
+            System.err.println("Invalid card number");
         }else{this.cardNumber=cardNumber;}
         this.holderName=holderName;
         this.balance=balance;
     }
 
     public DebitCard(long cardNumber, String holderName, double balance, String cardType,int pin){
-        this(cardNumber,holderName,balance);
+        this(cardNumber,holderName,balance); // constructor chaining
 
         if(cardType.equalsIgnoreCase("Master Card")||cardType.equalsIgnoreCase("Visa")){this.cardType=cardType;}else{
-            System.out.println("Invalid card type");
+            System.err.println("Invalid card type");
         }
         if(String.valueOf(pin).length()==4){this.pin=pin;}else{
-            System.out.println("Invalid pin");
+            System.err.println("Invalid pin");
         }
     }
 
     @Override
     public String toString() {
-        return "DebitCard{" +
-                "cardNumber=" + cardNumber +
-                ", holderName='" + holderName + '\'' +
+        return accountType +
+                "cardNumber=" + (cardNumber==0?"":cardNumber) +
+                ", HolderName=" + holderName +", "+
                 (cardType==null?"":cardType)+
-                ", balance=" + balance +
-                '}';
+                ", balance=" + balance;
     }
 }
 
