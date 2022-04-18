@@ -1,4 +1,6 @@
-package testing_or_explanations;
+package testing_or_explanations.TopicReviews;
+
+import testing_or_explanations.TopicReviews.Encapsulation;
 
 public class UsingEncapsulation {
 

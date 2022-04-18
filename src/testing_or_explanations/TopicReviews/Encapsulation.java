@@ -1,4 +1,4 @@
-package testing_or_explanations;
+package testing_or_explanations.TopicReviews;
 
 public class Encapsulation {
     //Access Modifiers -> variables and methods ->  determines the visibility.

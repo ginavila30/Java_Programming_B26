@@ -1,4 +1,4 @@
-package testing_or_explanations;
+package testing_or_explanations.CodingPractice;
 
 import java.util.Arrays;
 

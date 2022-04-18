@@ -1,4 +1,4 @@
-package testing_or_explanations;
+package testing_or_explanations.CodingPractice;
 
 import java.util.ArrayList;
 // accept a rectangle of inputs and find the paths the snake can go through. + means block 0 means pass.

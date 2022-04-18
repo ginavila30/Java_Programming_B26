@@ -1,4 +1,4 @@
-package testing_or_explanations;
+package testing_or_explanations.TopicReviews;
 
 public class MethodReview {
     //void method
