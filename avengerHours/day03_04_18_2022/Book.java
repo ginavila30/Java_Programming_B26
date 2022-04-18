@@ -17,6 +17,7 @@ public class Book {
     //Constructor
     public Book(String name){
         this.name=name;   bookCount++;
+        IdGenerator();
     }
     public Book(String name, String category){
         this(name);
@@ -25,6 +26,7 @@ public class Book {
     public Book (String name, String category, String author){
      this(name,category);
      this.author=author;
+     IdGenerator();
 
     }
 
@@ -42,11 +44,11 @@ public class Book {
  public void IdGenerator(){
         if(category!=null){
   switch (category.toLowerCase()){
-   case "adventure":shelfNum=1;
-   case "classics":shelfNum=2;
-   case "comics":shelfNum=3;
-   case "fantasy":shelfNum=4;
-   case "history":shelfNum=5;
+   case "adventure":shelfNum=1;break;
+   case "classics":shelfNum=2;break;
+   case "comics":shelfNum=3;break;
+   case "fantasy":shelfNum=4;break;
+   case "history":shelfNum=5;break;
    default:shelfNum=0;
   }}
 if(author!=null){

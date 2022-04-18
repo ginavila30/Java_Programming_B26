@@ -18,9 +18,7 @@ public class Library {
 
         System.out.println(Book.bookCount); // each constructor increases objects.
 
-        book1.IdGenerator();
-        book2.IdGenerator();
-        book3.IdGenerator();
+
 
         ArrayList<Book>allBooks=new ArrayList<>(Arrays.asList(book1,book2,book3));
         System.out.println(allBooks);
