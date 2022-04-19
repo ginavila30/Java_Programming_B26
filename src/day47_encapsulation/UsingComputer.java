@@ -1,6 +1,4 @@
-package day_47_encapsulation;
-
-import day_47_encapsulation.Computer;
+package day47_encapsulation;
 
 public class UsingComputer {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package day_47_encapsulation;
+package day48_encapsulation;
 
 public class Square {
 //Instance Vx
@@ -6,6 +6,8 @@ public class Square {
 //Constructor
    public Square(double side){
       setSide(side);
+      calculateArea();
+      calculatePerimeter();
    }
 //Setter Method
    public void setSide(double side){
@@ -17,7 +19,7 @@ public class Square {
        return side;
    }
 //Instance methods
-   public double calculateArea(){
+  public double calculateArea(){
        return side*side;
    }
    public double calculatePerimeter(){
