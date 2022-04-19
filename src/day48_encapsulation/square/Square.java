@@ -1,4 +1,4 @@
-package day48_encapsulation;
+package day48_encapsulation.square;
 
 public class Square {
 //Instance Vx

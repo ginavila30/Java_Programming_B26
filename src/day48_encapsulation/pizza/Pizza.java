@@ -1,4 +1,4 @@
-package day47_encapsulation;
+package day48_encapsulation.pizza;
 
 public class Pizza {
 //Instance Vxs
@@ -22,7 +22,9 @@ public Pizza (String size, int toppings){
             case "small":
             case "medium":
             case "large":
-                this.size=size;
+                this.size=size; break;
+            default:
+                System.out.println("wrong input");
         }
     }
 
@@ -43,6 +45,7 @@ public Pizza (String size, int toppings){
 //Instance Methods
 
 public double calculatePrice(){
+        if(size==null){return  -1;}
       double totalPrice=0;
       switch (size.toLowerCase()){
           case "small":totalPrice+=4; break;

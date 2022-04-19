@@ -1,6 +1,6 @@
-package day48_encapsulation;
+package day48_encapsulation.square;
 
-import day48_encapsulation.Square;
+import day48_encapsulation.square.Square;
 
 public class UsingSquare {
     public static void main(String[] args) {
