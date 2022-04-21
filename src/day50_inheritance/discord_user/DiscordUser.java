@@ -21,7 +21,7 @@ public class DiscordUser {
         this.role=role;
         this.name=name;
         this.id=id;
-        cydeoApp =new App("Cydeo App",2.5);
+      //  cydeoApp =new App("Cydeo App",2.5);
     }
 
     public String toString(){

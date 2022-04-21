@@ -10,7 +10,7 @@ public class Instagram extends App {
 //    - create method:
 //    postPicture()
 //    Example output: prints Posting picture to Instagram
-String color;
+   String color;
     public Instagram(double version, String color){
         super("Instagram",version);
         this.color=color;
@@ -23,4 +23,21 @@ String color;
     public String toString(){
         return "App->" +name+" Version->"+version+" Color->"+color;
     }
-}
+//
+//    public static void main(String[] args) {
+//        Instagram insta1=new Instagram(2.3,"pink",9);
+//        System.out.println(insta1);
+//
+//
+////        insta1.setCount(100);
+////        System.out.println(insta1.getCount());
+
+
+
+    }
+
+
+
+
+
+
