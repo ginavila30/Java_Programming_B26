@@ -1,4 +1,4 @@
-package day49_inheritance.Book;
+package day50_inheritance.Book;
 
 public class AudioBook extends Book{
     public double duration;
