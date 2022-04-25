@@ -1,0 +1,16 @@
+Answer these:
+
+	What is the purpose of this keyword
+	This keyword indicates the compiler that we are referencing instances.
+
+	What is the purpose of super keyword
+	Super keyword indicates the constructor that we are referencing super class.
+
+	Why do we use constructor chaining
+	we use constructor chaining to avoid repetition, when variables from a previous created constructor are repeated. It
+	 is how we call a constructor inside other constructor.
+
+	Do constructors get inherited, or how do they work in inheritance
+	Constructors are not inherited, however, when creating a child class, this one must call the parent constructor by
+	using super() key word, this is done manually when the parent class has parameterized constructor. When parent class
+	 only has default constructor, compiler calls parent constructor implicitly.
