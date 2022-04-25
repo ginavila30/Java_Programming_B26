@@ -7,6 +7,6 @@ public class Book {
     public int chapter;
     public boolean hasAMovie;
     double price;// testing inheritance of default vxs.
-
+    static String editor;// it is inheritable
 
 }

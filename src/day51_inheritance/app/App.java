@@ -1,6 +1,6 @@
-package day50_inheritance.app;
+package day51_inheritance.app;
 
-public class App {
+public class App {//App is a object because Object class is  parent class of all classes.
 //    Create an App class
 //
 //    - create variables:

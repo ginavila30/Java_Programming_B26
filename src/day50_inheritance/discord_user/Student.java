@@ -10,11 +10,11 @@ public class Student extends DiscordUser {
     - create method:
         sendMessage()
             Example output: prints Sending message to class chat*/
-    public Student (String name, String id){
-        super("Student",name, id);
+    public Student(String name, String id) {
+        super("Student", name, id);
     }
 
-    public void sendMessage(){
+    public void sendMessage() {
         System.out.println("Sending message to class chat");
     }
 

@@ -1,6 +1,6 @@
 package day50_inheritance.discord_user;
 
-import day50_inheritance.app.App;
+import day51_inheritance.app.App;
 
 public class DiscordUser {
 //    Create an DiscordUser class
@@ -21,7 +21,7 @@ public class DiscordUser {
         this.role=role;
         this.name=name;
         this.id=id;
-      //  cydeoApp =new App("Cydeo App",2.5);
+      //new App("Cydeo App",2.5);
     }
 
     public String toString(){

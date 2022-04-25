@@ -1,4 +1,6 @@
-package day50_inheritance.app;
+package day51_inheritance.app;
+
+import day51_inheritance.app.App;
 
 public class Youtube extends App {
 //    Create a class Youtube

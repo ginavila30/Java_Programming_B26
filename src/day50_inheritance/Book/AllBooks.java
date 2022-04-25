@@ -13,6 +13,7 @@ public class AllBooks {
         book1.price=2.50;
         book1.hasAMovie=true;
 
+
         AudioBook audioBook1=new AudioBook();
         audioBook1.title="los 7 elementos";
         audioBook1.author= new Author("Jaime R",35);// same as line 7
@@ -23,6 +24,9 @@ public class AllBooks {
         audioBook1.narrator="Gina S";
         audioBook1.duration=3.5;
         audioBook1.listen();
+        AudioBook.editor="Gina";// example of static inheritance. vx was declared in Book as a static Audio book inherited Book. So the static vx was inherited.
+
+
 
         E_Book e_book1=new E_Book();
         e_book1.title="Galaxy";

@@ -1,6 +1,6 @@
-package day50_inheritance.app;
+package day51_inheritance.app;
 
-public class MyPhoneApps {
+public class AppStrore {
     public static void main(String[] args) {
 //        App application1= new App("Facebook",1.5);
 //        application1.download();

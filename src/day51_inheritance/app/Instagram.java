@@ -1,4 +1,6 @@
-package day50_inheritance.app;
+package day51_inheritance.app;
+
+import day51_inheritance.app.App;
 
 public class Instagram extends App {
 //    Create a class Instagram
@@ -12,6 +14,7 @@ public class Instagram extends App {
 //    Example output: prints Posting picture to Instagram
    String color;
     public Instagram(double version, String color){
+
         super("Instagram",version);
         this.color=color;
     }
