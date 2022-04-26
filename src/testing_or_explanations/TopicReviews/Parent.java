@@ -4,7 +4,7 @@ public class Parent {
     // Attributes
 
     private int age;// instance vx-> object
-    public String name;//instance vx-> object
+   protected String name;//instance vx-> object
     static String planet;//static vx-> class
 
     static {planet="Earth";}//static block, initializer for static vx.

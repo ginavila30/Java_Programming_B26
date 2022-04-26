@@ -1,7 +1,5 @@
 package day21_04_25_2022.employee;
 
-import day21_04_25_2022.employee.Employee;
-
 /*Task  1 : EmployeeTask
 
          Create an Employee Class:
