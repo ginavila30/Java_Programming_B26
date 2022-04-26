@@ -11,7 +11,7 @@ public class FourthLargestNum {
 
         if(arr.length>=4){
         for (int i = 0; i < arr.length ; i++) {
-            for (int j = 0; j < arr.length ; j++) {
+            for (int j = i+1; j < arr.length ; j++) {
                 if(arr[i]>arr[j]){
                     int temp=arr[i];
                     arr[i]=arr[j];
@@ -19,7 +19,7 @@ public class FourthLargestNum {
                 }
             }
         }
-        return arr[3];}else{
+        return arr[arr.length-4];}else{
             return 0;
         }
     }
@@ -27,5 +27,6 @@ public class FourthLargestNum {
     public static void main(String[] args) {
         int[] arr  ={2 , 56 , 0 , 25 , 1 , 75 , 9 , 8};
         System.out.println(fourthLargestNum(arr));
+        System.out.println(Arrays.toString(arr));
     }
 }

@@ -1,4 +1,4 @@
-package day04_04_25_2022;
+package day04_04_25_2022.exam;
 
 public class GradeActivity {
     /*Task 01 ; - Create a class GradeActivity (implement Encapsulation process)

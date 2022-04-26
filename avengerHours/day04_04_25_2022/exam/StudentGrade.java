@@ -1,4 +1,6 @@
-package day04_04_25_2022;
+package day04_04_25_2022.exam;
+
+import day04_04_25_2022.exam.FinalExam;
 
 import java.util.Scanner;
 
@@ -13,9 +15,10 @@ public class StudentGrade {
         System.out.println("How many questions in the exam");
         System.out.println("How many question missed");
         FinalExam obj1=new FinalExam(scan.nextInt(), scan.nextInt());
-        obj1.calcNumericScore();
         System.out.println(obj1.numericScore);
+        System.out.println(obj1.getScore());
         System.out.println(obj1.getGrade());
+
 
     }
 }

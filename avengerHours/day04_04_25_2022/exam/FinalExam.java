@@ -1,4 +1,4 @@
-package day04_04_25_2022;
+package day04_04_25_2022.exam;
 
 public class FinalExam extends GradeActivity {
     /*- Create a class FinalExam (subclass of GradeActivity)
@@ -14,6 +14,7 @@ public class FinalExam extends GradeActivity {
     public FinalExam(int numQuestion, int numMissed) {
         this.numQuestion = numQuestion;
         this.numMissed = numMissed;
+        calcNumericScore();
     }
     // - Instance method ; calcNumericScore()
     //                         first calculate the pointsEach  (based on 100 pts)

@@ -3,7 +3,7 @@ package testing_or_explanations.TopicReviews;
 public class Person {
     // Attributes
 
-    // Instance vxs-> variables created in the class but outside of the method. They belong to object.
+    // Instance vxs-> variables created in the class but outside the method. They belong to object.
     //Local vxs -> variables created within scope {}.
     String name;// instance
     int age;// instance
