@@ -1,0 +1,39 @@
+Can you answer these:
+-What is the purpose of this keyword?
+this keyword is used to indicate the compiler that we are referencing instance. We can use this -> for variables (when in a constructors local vx is same as instance vx we use this keyword to note difference)  or this() -> for constructors chaining.
+-What is the purpose of super keyword?
+The purpose of super keyword is to reference parent class/object. we can use super for variables and super() for constructors.
+-Why do we use constructor chaining?
+We use constructor chaining when we overload a method, and we need to call the other constructor inside the new constructor being created. This also helps to avoid repetition.
+-Why must a sub class call the parent class constructor to create the object?
+Because constructors are not inherited, so it must be called manually.
+-What is the difference between this() and super()
+this() calls a constructor inside another constructor when overloading constructors and chaining. super() calls the parent constructor in a child class constructor, it is a must. They both need to be called first thing in the constructor.
+-What is the default constructor?
+default constructor is a constructor with no parameters that by default is given in each class, to create objects of that class. Once I create a constructor manually, the default constructor is removed, and if needed I need to type it manually.
+-How does it change if you create your own constructor? How does it change the super class interactions?
+-When I create my own constructor, default constructor is removed, and if it is a child class, I must call the parent constructor by using super().
+-What is the difference between method overloading and method overriding?
+Method overloading is changing the parameters accepted in the method. In this case parameters and data type can change. It happens within same class. When overloading access modifier can change.
+Method overriding happens when there is an inheritance relationship. and it is changing the implementation of a method in a child class. The signature of the method must be same as the parent cass method. I can not override static, final or private methods. When overriding access modifier should be same or more visible.
+-Which things are inherited from one class to another?
+Instance and static members that are public, protected or default if inheritance happens within same package.
+-Which things are not inherited from one class to another?
+constructors, private members, default members when inheritance happens outside the package.
+-What is inheritance?
+inheritance is passing information and actions from one class called parent to another class called child. This happens by using key word extends, and the parent class of all classes is Object class. There are 3 types of inheritance: single(one parent class only t one child class) hierarchical(1 parent class is super class of multiple child classes) multilevel (a parent class inherit to a child class and that child class at the same time is a parent class for another class)
+-What is encapsulation?
+Encapsulation is an oop concept that allows  to protect information, so we access or modify private members indirectly by using setter and getter methods. variables must be private and setter and getter must be public.
+-What is the difference between all the access modifiers?
+public-> visible everywhere
+default-> visible within same package
+private-> visible within same class
+protected-> visible same as default with the addition of being visible when there is inheritance relationship.
+-How are protected and default different?
+When there is inheritance relationship, protected has an extra level of visibility which is in the child class even if it is outside the package.
+-Can you override static methods?
+We cannot override static methods, however we can hide the method. to do that in child class we declare exact same method signature from parent class and this will hide the parent class method. You can still access it by calling it from the parent object.
+-What are final variables, final methods, and final classes?
+Final variables are variables that once the value is assigned they can't be reassigned a new value. They don't have a default value, that's why when I declared a final vx I must give value right away.
+Final class can't be a parent class, but it is a child class.
+Final method is a method that can't be overridden, since the implementation can't change. However, it can be overloaded.
