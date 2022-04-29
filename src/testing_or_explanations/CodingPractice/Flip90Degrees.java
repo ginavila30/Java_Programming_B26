@@ -28,11 +28,12 @@ public class Flip90Degrees {
 
         for (int i = 0, l= cube.length-1; i < cube.length ; i++,l--) {
             for (int j = 0; j < cube.length ; j++) {
-              int each =cube[i][j];
-                cubeCopy[j][l]=each;
+
+                cubeCopy[j][l]=cube[i][j];
             }
         }
-        System.out.println(Arrays.deepToString(cubeCopy));
-
+        for (int[] arr : cubeCopy) {
+            System.out.println(Arrays.toString(arr));
+        }
     }
 }
