@@ -1,0 +1,60 @@
+Task 1:	browserTask
+
+
+    Create the following custom classes:
+		0. Browser:
+				openBrowser(): prints "opening chrome browser"
+				closeBrowser():  prints "closing chrome browser"
+
+
+		1. Chrome extends Browser
+                methods:
+					openBrowser(): prints "opening chrome browser"
+					closeBrowser(): prints "closing chrome browser"
+
+		2. FireFox extends Browser
+				methods:
+					openBrowser(): prints "opening firefox browser"
+					closeBrowser(): prints "closing fire fox browser"
+
+		3. Opera extends Browser
+				methods:
+					openBrowser(): prints "opening opera browser"
+					closeBrowser(): prints "closing opera browser"
+
+		4. Safari extends Browser
+				methods:
+					openBrowser(): prints "opening safari browser"
+					closeBrowser(): prints "closing safari browser"
+
+
+	Task 2:	cydeoTask
+
+           1. create a class named Person
+                	variables: name, gender, age
+                	 methods: eat(), sleep(), drink()
+
+           2. create the following sub classes of Person:
+
+                	 1. Student
+
+                	 variables: name, gender, age, schoolName, studentId
+                	 methods: study(), attendClass()
+
+                	 2. Employee
+                	variables: name, gender, age, jobTitle, employeeID, salary
+                    methods: work(), attendMeeting()
+
+           3. create the following sub classes of Employee
+
+                	 1. Tester
+                	variables: name, gender, age, jobTitle, employeeID, salary
+                    methods: work(), attendMeeting()
+
+                     2. Developer
+                	variables: name, gender, age, jobTitle, employeeID, salary
+                    methods: work(), attendMeeting()
+
+                	3. Teacher
+                	variables: name, gender, age, jobTitle, employeeID, salary
+                    methods: work(), attendMeeting()
