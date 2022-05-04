@@ -1,4 +1,4 @@
-package day23_05_03_2022.person;
+package day23_05_03_2022.cydeo;
 
 public class Teacher extends Employee {
     public Teacher(String name, char gender, int age, String employeeId, double salary, String jobTitle) {
