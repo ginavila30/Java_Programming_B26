@@ -15,7 +15,7 @@ public class MostCommonVowel {
         int i = Collections.frequency(list, "i");
         int o = Collections.frequency(list, "o");
         int u = Collections.frequency(list, "u");
-        ArrayList<Integer> list2 = new ArrayList<Integer>(Arrays.asList(a, e, i, o, u));
+        ArrayList<Integer> list2 = new ArrayList<>(Arrays.asList(a, e, i, o, u));
         int max = Collections.max(list2);
         String result = "";
         if (a == max) {
