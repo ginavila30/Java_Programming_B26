@@ -7,11 +7,16 @@ public class Tester extends Employee{
 
     @Override
     public void work() {
-        System.out.println("Tester working on test cases");
+        System.out.println(getName()+" is working on test cases");
     }
 
     @Override
     public void attendMeeting() {
-        System.out.println("Tester attending sprint planning meeting");
+        System.out.println(getName()+"is attending sprint planning meeting");
+    }
+
+    @Override
+    public void drink(String beverage) {
+        System.out.println(getName()+" is drinking "+beverage);
     }
 }

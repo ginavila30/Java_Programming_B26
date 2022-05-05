@@ -1,8 +1,8 @@
 package day23_05_03_2022.cydeo;
 
 public class Student extends Person{
-    String schoolName;
-    String studentId;
+    private String schoolName;
+    private String studentId;
 
     public Student(String name, char gender, int age, String schoolName, String studentId){
         super(name,gender,age);
@@ -12,10 +12,18 @@ public class Student extends Person{
 
 
     public void study() {
-        System.out.println("Studying");
+        System.out.println(getName()+" Studying");
     }
     public void attendClass() {
-        System.out.println("Attending Class");
+        System.out.println(getName()+"Attending Class");
     }
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                super.toString()+
+                "schoolName='" + schoolName + '\'' +
+                ", studentId='" + studentId + '\'' +
+                '}';
+    }
 }
