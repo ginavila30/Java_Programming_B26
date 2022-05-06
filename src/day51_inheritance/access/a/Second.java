@@ -7,6 +7,7 @@ public class Second {
         System.out.println(obj.one);
         System.out.println(obj.two);
         System.out.println(obj.three);
+
        // System.out.println(obj.four); No accessible because it is private. so only accessible in same class.
     }
 }

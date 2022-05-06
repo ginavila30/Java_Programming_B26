@@ -11,7 +11,9 @@ public class Four extends First { // First is parent Four is child
         //System.out.println(obj.four); No accessible because it is private. so only accessible in same class.
 
         Four obj2=new Four();
+
         System.out.println(obj2.one);
         System.out.println(obj2.two);// it is protected variable but since Four is inheriting First, now objects from Four also have access to protected variables from First.
+
     }
 }
