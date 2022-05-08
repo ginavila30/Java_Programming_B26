@@ -1,4 +1,4 @@
-package day54_05_03_2022.shopping;
+package day55_polymorphism.shopping;
 /*Create a concrete class Ebay
     - Make the class final
     - Inherit OnlineShopping and implements interface AllowUsersToSell interface

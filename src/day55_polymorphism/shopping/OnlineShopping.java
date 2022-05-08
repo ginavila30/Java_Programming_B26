@@ -1,4 +1,4 @@
-package day54_05_03_2022.shopping;
+package day55_polymorphism.shopping;
 /*Create an abstract class OnlineShopping
     - Inherits Shopping and implements Shipping
     - Does not need to implement any abstract methods

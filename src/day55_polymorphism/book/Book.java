@@ -1,0 +1,9 @@
+package day55_polymorphism.book;
+/*Create an abstract class Book
+    - Declare a name variable
+    - Declare an abstract methods:
+        read();*/
+public abstract class Book {
+   public String name;
+    public abstract void read();
+}

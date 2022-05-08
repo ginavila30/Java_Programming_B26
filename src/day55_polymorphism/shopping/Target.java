@@ -1,8 +1,8 @@
-package day54_05_03_2022.shopping;
+package day55_polymorphism.shopping;
 /*Create a concrete class Target
     - Make the class final
     - Inherit Shopping and implement all abstract methods*/
-public final class Target extends Shopping{
+public final class Target extends Shopping{// can't inherit target
     @Override
     public void buyItem() {
         System.out.println("Buying at Target");
@@ -13,3 +13,4 @@ public final class Target extends Shopping{
         System.out.println("Returning at Target");
     }
 }
+
