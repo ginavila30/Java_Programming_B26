@@ -1,0 +1,59 @@
+Day 25 -- Tuesday
+Day 26 -- Wednesday
+
+- Abstraction
+- Interface
+
+
+
+Task 1 : studentTask (Abstraction)
+
+	   Person (abstract)
+                instance variables:   name, age
+                abstract method:      sleep()
+
+       Student (abstract) inherits Person
+                instance variables:      batchNumber
+                abstract method:         attendClass()
+                non-abstract method:     code(String language)
+
+       Create the following classes that inherits the Student
+          					1. OnlineStudent
+          					2. CampusStudent
+
+       implement all the methods that are needed
+
+
+
+Task 2 :browserTask
+
+	Interface WebDriver:
+        void get(String URL);
+        void close();
+        void quit();
+
+    Interface TakeScreenShot:
+        void TakeScreenShot(String name);
+
+    Interface JavaScriptExecuter:
+          void executeScript(String script);
+
+	Abstract RemoteDriver: implements all Interface (WebDriver - TakeScreenshot - JavaScriptExecuter)
+		   there is no method / variable etc for practice purpose
+
+    Create the following classes that inherits the RemoteDriver
+          					1. ChromeDriver
+          					2. FirefoxDriver
+          					3. Edge
+          					4. Opera
+          					...
+          					..
+          					.
+
+       implement all the methods that are needed
+
+
+
+
+
+
