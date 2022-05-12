@@ -1,8 +1,8 @@
 package day25_05_09_2022.person;
 
 public class CampusStudent extends Student {
-   public  CampusStudent(int batchNum){
-       super(batchNum);
+   public  CampusStudent(String name, int age, int batchNum){
+       super(name, age,batchNum);
    }
 
     @Override

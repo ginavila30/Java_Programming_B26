@@ -1,4 +1,4 @@
-package day55_polymorphism.book;
+package day56_polymorphism.book;
 
 public class SeleniumBook extends Book {
     @Override

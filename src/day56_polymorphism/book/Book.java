@@ -1,4 +1,4 @@
-package day55_polymorphism.book;
+package day56_polymorphism.book;
 /*Create an abstract class Book
     - Declare a name variable
     - Declare an abstract methods:

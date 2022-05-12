@@ -1,11 +1,13 @@
 package day25_05_09_2022.person;
 
+import java.security.SecureRandom;
+
 /*   Create the following classes that inherits the Student
           					1. OnlineStudent
           					2. CampusStudent*/
 public class OnlineStudent extends Student {
-    public OnlineStudent(int batchNum){
-        super(batchNum);
+    public OnlineStudent(String name, int age,int batchNum){
+        super(name, age, batchNum);
     }
 
     @Override

@@ -1,4 +1,4 @@
-package day55_polymorphism.book;
+package day56_polymorphism.book;
 /*Create a concrete class JavaTextbook
     - Inherits EBook
     - Declare a fun variable

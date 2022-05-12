@@ -10,8 +10,8 @@ import day25_05_09_2022.person.Person;
 public abstract class Student extends Person {
     int batchNum;
 
-    public Student(int batchNum){
-        super();
+    public Student(String name, int age, int batchNum){
+        super(name, age);
         this.batchNum=batchNum;
     }
     public abstract void attendClass();
