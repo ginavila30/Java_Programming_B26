@@ -1,6 +1,6 @@
 package testing_or_explanations.TopicReviews;
 
-public class Parent {
+public  class Parent {
     // Attributes
 
     private int age;// instance vx-> object
@@ -20,6 +20,7 @@ public class Parent {
     public void display(){
         System.out.println(name+" lives in planet "+planet+" and is a parent class");
     }
+
 
 
 
