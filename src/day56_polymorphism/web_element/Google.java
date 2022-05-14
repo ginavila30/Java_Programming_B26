@@ -4,12 +4,17 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /*create a runner class to create objects of Link and Input with a focus on the interface references */
-public class Runner {
+public class Google {
     public static void main(String[] args) {
-        WebElement element1=new Link();
-        WebElement element2=new Input();
+        WebElement link=new Link();
+        WebElement input=new Input();
 
-        WebElement[]arr={element1,element2};
+        WebDriverUtil.clickElement(link);
+        WebDriverUtil.clickElement(input);
+
+
+
+        WebElement[]arr={link,input};
 
         ArrayList<WebElement>list=new ArrayList<>(Arrays.asList(arr));
 
