@@ -1,4 +1,4 @@
-package day56_polymorphism.web_element;
+package day57_exceptions.web_element;
 /*create a class Input
     implement the WebElement interface and implement all abstract methods*/
 public class Input implements WebElement {

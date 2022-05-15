@@ -1,4 +1,4 @@
-package day56_polymorphism.web_element;
+package day57_exceptions.web_element;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -11,10 +11,15 @@ public class Google {
 
         WebDriverUtil.clickElement(link);
         WebDriverUtil.clickElement(input);
+        WebDriverUtil.clickElement(new Link());
 
 
 
-        WebElement[]arr={link,input};
+        WebElement[]arr=new WebElement[4];
+        arr[0]=link;
+        arr[1]=input;
+        arr[2]=new Input();
+        arr[3]=new Image();
 
         ArrayList<WebElement>list=new ArrayList<>(Arrays.asList(arr));
 

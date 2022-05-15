@@ -1,4 +1,4 @@
-package day56_polymorphism.web_element;
+package day57_exceptions.web_element;
 /* implement the WebElement interface and implement all abstract methods*/
 public class Link implements WebElement {
 
