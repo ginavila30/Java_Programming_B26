@@ -10,6 +10,8 @@ try{
     System.out.println(word.charAt(100));
 
 }catch (Exception e){
+    e.printStackTrace();
+    e.getMessage();
     System.out.println("Exception happened in the catch block");
 
 }
