@@ -113,7 +113,7 @@ public class Facebook extends SocialMedia implements Groups {
 
     @Override
     public void post(Object media) {
-        Post postObj = new Post((String) media);
+        Post postObj = (Post) media;
         posts.add(postObj);
     }
 

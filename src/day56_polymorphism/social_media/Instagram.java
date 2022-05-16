@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Instagram extends SocialMedia implements hasPictures{
     private int numberOfFollowers;
     private int numberOfFollowings;
-    private ArrayList<Picture> list;
+    private ArrayList<Picture> pictures = new ArrayList<>();
 
     public Instagram(String username, String password, String fullName) {
         this.username = username;
@@ -35,12 +35,12 @@ public class Instagram extends SocialMedia implements hasPictures{
         this.numberOfFollowings = numberOfFollowings;
     }
 
-    public ArrayList<Picture> getList() {
-        return list;
+    public ArrayList<Picture> getPictures() {
+        return pictures;
     }
 
-    public void setList(ArrayList<Picture> list) {
-        this.list = list;
+    public void setPictures(ArrayList<Picture> pictures) {
+        this.pictures = pictures;
     }
 
     @Override
@@ -50,7 +50,8 @@ public class Instagram extends SocialMedia implements hasPictures{
 
     @Override
     public void post(Object media) {
-        list.add((Picture) media);
+
+        pictures.add((Picture) media);
     }
 
     @Override
@@ -83,7 +84,7 @@ public class Instagram extends SocialMedia implements hasPictures{
         return "Instagram{" +
                 "numberOfFollowers=" + numberOfFollowers +
                 ", numberOfFollowings=" + numberOfFollowings +
-                ", list=" + list +
+                ", list=" + pictures +
                 ", personalUrl='" + personalUrl + '\'' +
                 ", accountLength=" + accountLength +
                 ", username='" + username + '\'' +
