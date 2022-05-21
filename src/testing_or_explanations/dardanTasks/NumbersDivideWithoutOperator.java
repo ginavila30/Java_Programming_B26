@@ -45,7 +45,7 @@ public class NumbersDivideWithoutOperator {
     }
 
     public static void main(String[] args) {
-        System.out.println(divideWithoutOperator(1, 50));
+        System.out.println(divideWithoutOperator(22, 5));
     }
 
 
