@@ -1,18 +1,36 @@
 package testing_or_explanations;
 
+import java.util.*;
+
 public class CodingBat {
-    public static String withoutX(String str) {
+    public  static String wordAppend(String[] strings) {
+        String result="";
 
-        if(str.startsWith("x")){str=str.substring(1);}
+        ArrayList<String> list=new ArrayList<>(Arrays.asList(strings));
 
-        if(str.endsWith("x")){ str= str.substring(0,str.length()-1);}
+        Map<String,Integer> map=new HashMap<>();
 
-        return str;
+        for(String each:strings){
+            if(Collections.frequency(list, each)>=2){
+                map.put(each,Collections.frequency(list, each)/2);}
+        }
+
+        for(Integer each: map.values()){
+            for(String eachKey: map.keySet()){
+                for(int i=0; i<each;i++){
+                    result+=eachKey;
+                }
+            }
+        }
+
+        return result;
     }
 
 
+
     public static void main(String[] args) {
-        System.out.println(withoutX("xHix"));
+
+        wordAppend(new String[]{"a", "b", "b", "b", "a", "c", "a", "a"});
     }
 }
 
