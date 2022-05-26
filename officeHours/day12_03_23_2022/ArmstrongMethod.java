@@ -21,7 +21,7 @@ public class ArmstrongMethod {
     }
 
     public static void main(String[] args) {
-        armstrongNum(8);
+        armstrongNum(153);
     }
 }
 
