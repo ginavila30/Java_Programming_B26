@@ -1,4 +1,4 @@
-package day62_maps;
+package day63_functional_interfaces;
 
 import java.util.*;
 
@@ -14,20 +14,20 @@ Use the created map to find the following:
     1.4 display the names of the employees who are making less than 118k?
     1.5 increase the salary of each employee by 10K*/
     public static void main(String[] args) {
-        Map<String, Integer> map = new HashMap<>();
-        map.put("Gina", 120);
-        map.put("Simi", 135);
-        map.put("elena", 140);
-        map.put("lorena", 110);
+        Map<String, Double> map = new HashMap<>();
+        map.put("Gina", 120.00);
+        map.put("Simi", 135.00);
+        map.put("elena", 140.00);
+        map.put("lorena", 110.00);
 
-        Integer maxSalary = 0;
+        Double maxSalary = 0.0;
         String maxSalaryName = "";
-        Integer minSalary = Integer.MAX_VALUE;
+        Double minSalary = Double.MAX_VALUE;
         String minSalaryName = "";
         int counterSalary = 0;
         ArrayList<String> salaryLess118 = new ArrayList<>();
 
-        for (Map.Entry<String, Integer> each : map.entrySet()) {
+        for (Map.Entry<String, Double> each : map.entrySet()) {
 
             if (each.getValue() > maxSalary) {
                 maxSalary = each.getValue();
