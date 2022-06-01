@@ -1,4 +1,4 @@
-package day63_functional_interfaces;
+package day64_functional_interface;
 
 import java.util.function.Consumer;
 /*Use Consumer functional interface to:

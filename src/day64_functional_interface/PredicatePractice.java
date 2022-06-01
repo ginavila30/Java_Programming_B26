@@ -1,8 +1,7 @@
-package day63_functional_interfaces;
+package day64_functional_interface;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 import java.util.function.Predicate;
 
 /*Use Predicate Functional interface to:
@@ -26,7 +25,7 @@ public class PredicatePractice {
             return valid;
         };
 
-        System.out.println(verifyDuplicateDigits.test(157));
+        System.out.println(verifyDuplicateDigits.test(123));
         //1.2 Create a function that can verify if a password is a strong password. Characteristics of strong passwords are:
         //		        Password must be at least have 8 characters long, and should not contain space
         //		        Password should at least contain one upper case letter
