@@ -3,34 +3,24 @@ package testing_or_explanations;
 import java.util.*;
 
 public class CodingBat {
-    public  static String wordAppend(String[] strings) {
-        String result="";
-
-        ArrayList<String> list=new ArrayList<>(Arrays.asList(strings));
-
-        Map<String,Integer> map=new HashMap<>();
-
-        for(String each:strings){
-            if(Collections.frequency(list, each)>=2){
-                map.put(each,Collections.frequency(list, each)/2);}
-        }
-
-        for(Integer each: map.values()){
-            for(String eachKey: map.keySet()){
-                for(int i=0; i<each;i++){
-                    result+=eachKey;
-                }
+    public static String withoutString(String base, String remove) {
+        for(int i=0; i<base.length()-remove.length(); i++){
+            if(base.substring(i,i+remove.length()).equalsIgnoreCase(remove)){
+                base=base.replace(remove.toLowerCase(),"");
+                base=base.replace(remove.toUpperCase(),"");
+                base=base.replace(remove,"");
             }
         }
 
-        return result;
+        return base;
+
     }
 
 
 
-    public static void main(String[] args) {
 
-        wordAppend(new String[]{"a", "b", "b", "b", "a", "c", "a", "a"});
+    public static void main(String[] args) {
+        System.out.println(withoutString("This is a FISH", "IS"));
     }
 }
 
