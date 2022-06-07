@@ -3,41 +3,25 @@ package testing_or_explanations;
 import java.util.*;
 
 public class CodingBat {
-    public static boolean gHappy(String str) {
-        boolean happy = false;
-
-        if (str.length() >= 2) {
-            for (int i = 0; i < str.length(); i++) {
-                if (str.charAt(i) == 'g') {
-                    if (i != 0 && i != str.length() - 1) {
-                        if (str.charAt(i - 1) == 'g' || str.charAt(i + 1) == 'g') {
-                            happy = true;
-                        } else {
-                            happy = false;
-                        }
-                    } else {
-                        if (i == 0) {
-                            if (str.charAt(i + 1) != 'g') {
-                                happy = false;
-                            }else{happy = true;}
-                            }
-                        else {
-                            if (str.charAt(i - 1) != 'g') {
-                                happy = false;
-                            }else{happy =true;}
-                        }
-                    }
-                }
+    public static String notReplace(String str) {
+        String result="";
+        for(int i=0; i<str.length()-1;i++){
+            if(str.charAt(i)=='i'&& str.charAt(i+1)=='s' && (!Character.isLetter(str.charAt(i+2))||i==str.length()-1))
+            {
+                result+="is not";
+                i++;
+            }else{
+                result+=str.charAt(i);
             }
-        }else{if(str.isEmpty()){happy = true;}}
 
-        return happy;
+        }
+        return result;
     }
 
 
     public static void main(String[] args) {
 
-        System.out.println(gHappy("gg"));
+        System.out.println(notReplace("This is isabell"));
     }
 }
 

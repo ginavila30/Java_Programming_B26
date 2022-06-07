@@ -7,7 +7,8 @@ Write a function: that, given an integer N (1 < N < 100), returns an array conta
 */
 public class ArraySumUpTo0 {
 public static int[] arraySumUpTo0(int n){
-    int[]result= new int[n];
+    int[]result= new int[n];//[*,*,*,*,*]
+                           // [5,4,0,-4,-5]
 
     for (int i = 0, j=n-1; i <result.length/2 ; i++,j--) {
         result[i] = n;
