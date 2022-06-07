@@ -1,0 +1,31 @@
+package day09_06_06_2022;
+
+import java.util.Arrays;
+/*Task 01;
+     Write a function that takes in a non-empty array of integers and returns an array of the same length, where each element in the output array is equal to the product of every other number in the input array. In other words, the value at output[i] is equal to the product of every number in the input array other than input[i] .
+     Note that you're expected to solve this problem without using division.
+                Sample Input array = [5, 1, 4, 2]
+                Sample Output [8, 40, 10, 20]
+                     // 8 is equal to 1 x 4 x 2
+                     // 40 is equal to 5 x 4 x 2
+                     // 10 is equal to 5 x 1 x 2
+                     // 20 is equal to 5 x 1 x 4*/
+public class ProductOfElements {
+    public static Integer[] productOfElements(Integer[] arr){
+        Integer[]result=new Integer[arr.length];
+        for (int i = 0; i < arr.length ; i++) {
+            int newValue=1;
+            for (int j = 0; j < arr.length ; j++) {
+                if(j!=i){
+                    newValue*=arr[j];
+                }
+            }
+            result[i]=newValue;
+        }
+        return result;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(Arrays.toString(productOfElements(new Integer[]{2, 3, 4, 5})));
+    }
+}

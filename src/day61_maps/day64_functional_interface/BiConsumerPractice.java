@@ -1,4 +1,4 @@
-package day64_functional_interface;
+package day61_maps.day64_functional_interface;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package day64_functional_interface;
+package day65_streams;
 
 import day54_05_03_2022.creating.Create;
 

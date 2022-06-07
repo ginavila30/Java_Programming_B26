@@ -3,24 +3,41 @@ package testing_or_explanations;
 import java.util.*;
 
 public class CodingBat {
-    public static String withoutString(String base, String remove) {
-        for(int i=0; i<base.length()-remove.length(); i++){
-            if(base.substring(i,i+remove.length()).equalsIgnoreCase(remove)){
-                base=base.replace(remove.toLowerCase(),"");
-                base=base.replace(remove.toUpperCase(),"");
-                base=base.replace(remove,"");
+    public static boolean gHappy(String str) {
+        boolean happy = false;
+
+        if (str.length() >= 2) {
+            for (int i = 0; i < str.length(); i++) {
+                if (str.charAt(i) == 'g') {
+                    if (i != 0 && i != str.length() - 1) {
+                        if (str.charAt(i - 1) == 'g' || str.charAt(i + 1) == 'g') {
+                            happy = true;
+                        } else {
+                            happy = false;
+                        }
+                    } else {
+                        if (i == 0) {
+                            if (str.charAt(i + 1) != 'g') {
+                                happy = false;
+                            }else{happy = true;}
+                            }
+                        else {
+                            if (str.charAt(i - 1) != 'g') {
+                                happy = false;
+                            }else{happy =true;}
+                        }
+                    }
+                }
             }
-        }
+        }else{if(str.isEmpty()){happy = true;}}
 
-        return base;
-
+        return happy;
     }
 
 
-
-
     public static void main(String[] args) {
-        System.out.println(withoutString("This is a FISH", "IS"));
+
+        System.out.println(gHappy("gg"));
     }
 }
 
