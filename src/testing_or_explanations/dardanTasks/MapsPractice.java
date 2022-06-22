@@ -21,7 +21,9 @@ public class MapsPractice {
         map.put(9,8);
         map.put(3,2);
         map.put(25,1);
+        map.put(26,1);
         System.out.println(minimumValue(map));
+        System.out.println(sortByValue(map));
     }
     public static Map<String,Integer> frequencyOfChars(String str){
         Map<String, Integer>map=new LinkedHashMap<>();
@@ -49,7 +51,21 @@ public class MapsPractice {
         }
         return min;
     }
-//    public static Map <Integer,Integer> sortByValue(Map<Integer,Integer>map){
-//
-//    }
+    public static Map <Integer,Integer> sortByValue(Map<Integer,Integer>map){
+        Map<Integer,Integer>returnMap=new LinkedHashMap<>();
+        while(map.size()>0){
+            Integer minVal=Integer.MAX_VALUE;
+            Integer minKey=Integer.MAX_VALUE;
+            for (Map.Entry<Integer, Integer> each : map.entrySet()) {
+                if (each.getValue() <= minVal) {
+                    minVal = each.getValue();
+                    minKey= each.getKey();
+                }
+        }
+            returnMap.put(minKey,minVal);
+            map.remove(minKey);
+    }
+        return returnMap;
+}
+
 }
