@@ -15,7 +15,7 @@ import java.util.Map;
  */
 public class StringBrackets {
     public static void main(String[] args) {
-
+new Object();
         System.out.println(isBalanced("{{[()]}}"));
     }
 
