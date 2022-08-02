@@ -14,7 +14,7 @@ public class NumberPalindrome {
     }
 
     public static void main(String[] args) {
-        System.out.println(numberPalindrome(113));
+        System.out.println(numberPalindrome(-121));
         ;
     }
 }
